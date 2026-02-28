@@ -1,0 +1,18 @@
+body {
+  background: white;
+  margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    /* Create the 6 vertical columns and 12 horizontal rows */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr); 
+    gap: 10px;
+    height: 500px;
+}
+
+.box {
+    background-color: #c5e17a;
+    border: 1px solid #999;
+}

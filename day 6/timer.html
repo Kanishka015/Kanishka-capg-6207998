@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+<body>
+    <h1 id="count">0</h1>
+
+    <button onclick="decrement()">-</button>
+    <button onclick="increment()">+</button>
+    <button onclick="reset()">reset</button>
+
+    <script>
+        let count =0;
+        countdisplay = document.getElementById('count');;
+
+        function increment(){
+            count++;
+            countdisplay.innerText = count;
+        }
+        function decrement(){
+            count--;
+            countdisplay.innerText = count;
+        }
+        function reset(){
+            count = 0;
+            countdisplay.innerText = count;
+        }
+
+    </script>
+
+    <style>
+  /* Default Light Theme */
+  body { background: white; color: black; }
+
+  /* Dark Theme Class */
+  .dark { background: black; color: white; }
+</style>
+
+<button onclick="toggle()">Change Theme</button>
+
+
+<script>
+  function toggle() {
+    // This adds/removes the "dark" class from the body
+    document.body.classList.toggle("dark");
+  }
+
+  document.getElementById('f').onsubmit = (e) => {
+    e.preventDefault();
+    alert("Sent!");
+  };
+</script>
+    
+    
+</body>
+</html>

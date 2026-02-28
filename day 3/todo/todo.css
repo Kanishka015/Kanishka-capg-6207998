@@ -1,0 +1,25 @@
+:root { --primary: #4f46e5; --danger: #f43f5e; --success: #10b981; }
+body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #e0e7ff, #f3f4f6); display: flex; justify-content: center; min-height: 100vh; margin: 0; padding-top: 50px; }
+
+.app { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 350px; }
+h2 { margin-top: 0; color: #1e293b; font-size: 1.5rem; }
+
+.input-box { display: flex; gap: 8px; margin-bottom: 20px; }
+input { flex: 1; padding: 10px; border: 2px solid #f1f5f9; border-radius: 8px; outline: none; transition: 0.2s; }
+input:focus { border-color: var(--primary); }
+
+button { cursor: pointer; border: none; border-radius: 8px; font-weight: 600; transition: 0.2s; }
+.input-box button { background: var(--primary); color: white; padding: 0 15px; }
+.input-box button:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.list-section { margin-top: 20px; }
+small { color: #94a3b8; font-weight: 700; letter-spacing: 1px; }
+ul { list-style: none; padding: 0; margin-top: 10px; }
+
+li { display: flex; justify-content: space-between; align-items: center; background: #f8fafc; padding: 10px 12px; border-radius: 10px; margin-bottom: 8px; animation: slideIn 0.3s ease; }
+@keyframes slideIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+.btn-act { padding: 5px 10px; font-size: 12px; color: white; }
+#pending .btn-act { background: var(--success); }
+#done .btn-act { background: var(--danger); }
+#done span { text-decoration: line-through; color: #94a3b8; }
