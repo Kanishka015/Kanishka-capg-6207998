@@ -1,0 +1,7 @@
+
+
+
+
+//span[contains(@class,shortcut-name nav-assistant-card-font")]
+
+(//div[@class="RG5Slk"]/ancestor::div[@class="col col-7-12"]/following-sibling::div[@class="col col-5-12 mao5dl"]/descendant::div[@class= "hZ3P6w DeU9vF" and .= "₹14,999"])[1]
