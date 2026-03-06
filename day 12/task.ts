@@ -1,15 +1,9 @@
 import { test, expect } from '@playwright/test';
 
-test('Locate and check Android 12.0 filter', async ({ page }) => {
-  await page.goto('https://www.flipkart.com/search?q=phones&marketplace=FLIPKART&as-show=on');
-
+  test("Amazon - Filter by Android 12.0", async ({ page, browserName }) => {
   // Locate the checkbox using the text label as an anchor
-  const android12Checkbox = page.locator('xpath=//div[text()="Android 12.0"]/preceding-sibling::div');
+  await page.locator('aria-label="Remove the filter Android 12.0 to expand results"');
+    await page.locator('')
+    await page.screenshot({ path: `amazon-${browserName}.png`, fullPage: true });
 
-  // Scroll into view and click
-  await android12Checkbox.scrollIntoViewIfNeeded();
-  await android12Checkbox.click();
-
-  // Verify selection
-  await expect(android12Checkbox).toBeVisible();
 });
