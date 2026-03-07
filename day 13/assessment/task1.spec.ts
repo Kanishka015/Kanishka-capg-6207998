@@ -8,9 +8,6 @@ test("icc", async ({page}) => {
 
      await page.locator("//button[text()='Accept All Cookies']").click()
 
-  
-
-
   let b = await page.locator("//span[@class='text-xs leading-140 font-medium capitalize text-primary']").nth(0).textContent()
     console.log(b);
 
