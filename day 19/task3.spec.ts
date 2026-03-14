@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import profileData from '../testdata/profileData.json'
+import profileData from '../testdata/profiledata.json'
 
 test('Validate user profile update', async ({ page }) => {
 

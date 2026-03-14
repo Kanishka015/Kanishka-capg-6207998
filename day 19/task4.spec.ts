@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import userData from '../testdata/bookUser.json'
+import userData from '../testdata/bookuser.json'
 
 test('Register, Login and Add Book to Collection', async ({ page }) => {
 
