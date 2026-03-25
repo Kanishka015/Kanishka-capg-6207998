@@ -1,0 +1,15 @@
+{
+  "customer": {
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "postCode": "10001"
+  },
+  "account": {
+    "currency": "Dollar"
+  },
+  "transactions": {
+    "depositAmount": "5000",
+    "withdrawAmount": "1500",
+    "expectedBalance": "3500"
+  }
+}
