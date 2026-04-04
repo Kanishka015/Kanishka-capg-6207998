@@ -10,7 +10,7 @@ test(" ", async({page}) =>{
 
     await page.mouse.move(100,100)
 
-    // await page.locator("#btn_a").click({button:"right", clickCount:2, force:true})
+    // await page.locastor("#btn_a").click({button:"right", clickCount:2, force:true})
     // await page.locator("#btn_a").dblclick();
     // await page.locator('//img[@class="w-5 h-5 mt-5 ml-3 cursor-pointer"]').hover()
 

@@ -1,8 +1,8 @@
 import { test } from '@playwright/test';
-import LoginPage from '../day 25/pages/loginpage';
-import ManagerPage from '../day 25/pages/managerpage';
-import testData from '../testdata/testdata.json';
-import CustomerPage from '../day 25/pages/customerpage';
+import LoginPage from './pages/loginpage';
+import ManagerPage from './pages/managerpage';
+import testData from '../../testdata/testdata.json';
+import CustomerPage from './pages/customerpage';
 
 test.describe('XYZ Bank - Manager Flow Only', () => {
   

@@ -15,7 +15,7 @@ test('Basic Keyboard Actions Demo', async ({ page }) => {
   await page.keyboard.up('Control');
 
   await page.keyboard.press('Tab');
-  await page.keyboard.insertText('student@jecrc.com');
+  await page.keyboard.insertText('kanishka@gmail.com');
 
   await page.keyboard.press('Tab');
 
